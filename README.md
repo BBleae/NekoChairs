@@ -1,4 +1,4 @@
-# SimpleCore
+# NekoChairs
 
 Make some chairs in Minecraft.
 
@@ -17,7 +17,7 @@ Right click on any kind of **stairs** with **empty** main hand.
 ## Build
 
 ```bash
-git clone https://github.com/neko-craft/NekoCharis.git
+git clone https://github.com/BBleae/NekoCharis.git
 
 gradlew jar
 ```
