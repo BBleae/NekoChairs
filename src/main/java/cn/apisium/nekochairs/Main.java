@@ -117,12 +117,16 @@ public class Main extends JavaPlugin implements Listener {
 
     private boolean check(final Entity it) {
         final TextComponent name = (TextComponent) it.customName();
+        if (it.getPassengers().size() != 0) {
         final Entity p = it.getPassengers().get(0);
         if (name != null && name.content().equals(NAME)) {
             if (p != null && p.getVehicle() == it && it.getLocation().clone().add(-0.5, 1.18, -0.5).getBlock().getType().data == Stairs.class)
                 return true;
             it.remove();
             armorStandList.remove(it);
+        } else {
+            return false;
+        }
         }
         return false;
     }
